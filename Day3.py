@@ -68,7 +68,7 @@
 print("welcome to my pizza store!")
 bill = 0
 while True:
-    size = input("what size pizza do you want? S, M or L : ")
+    size = input("what size pizza do you want? S, M or L : ").upper()
     if size == "S":
         bill += 15
         break
@@ -79,11 +79,11 @@ while True:
         bill += 25
         break
     else:
-        print("please input right size. S for Small, M for Medium, L for Large , in capital letter")
+        print("please input right size. S for Small, M for Medium, L for Large")
         continue
 
 while True:
-    add_pepperoni= input("Do you want add pepperoni? Y or N : ")
+    add_pepperoni= input("Do you want add pepperoni? Y or N : ").upper()
     if add_pepperoni == "Y":
         if size == "S":
             bill += 2
@@ -98,7 +98,7 @@ while True:
         continue
 
 while True:
-    extra_cheese = input("Do you want extra cheese? Y or N : ")
+    extra_cheese = input("Do you want extra cheese? Y or N : ").upper()
     if extra_cheese == "Y":
         bill += 1
         break
